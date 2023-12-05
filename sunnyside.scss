@@ -1,1 +1,400 @@
+body{
+margin:0px;
+background: #F1F1F1;
 
+}
+// HEADER
+.imgfond{
+    background-image: url("image-header.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+height:800px;
+}
+header{
+    height: 800px;
+}
+.navbar{
+    display:flex;
+    height: 56px;
+    padding: 34px 48px 0px 40px;
+}
+.logo{
+    width: 170px;
+height: 33px;
+}
+.navlogo{
+    display:flex;
+    width:50%;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: center;
+}
+.contact{
+    background-color: white;
+    color: #24303E;
+    border-radius: 20px;
+    padding: 16px 30px 15px 32px;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left:47px;
+    font-family: Barlow;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 138.889% */
+letter-spacing: -0.129px;
+  }
+  .title1{
+    color: #FFF;
+    text-align: center;
+    font-family: Fraunces 9pt Soft;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    padding-top: 105px;
+
+  }
+.arrow{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+//FIN HEADER
+//DEBUT MAIN
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height:600px;
+}
+.card{
+width: 445px;
+height: 285px;
+padding-left: 165px;
+
+&__title{
+    color: #24303E;
+font-family: Fraunces 9pt Soft;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.286px;
+}
+&__content{
+    color: #808397;
+font-family: Barlow;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 166.667% */
+letter-spacing: -0.129px;
+}
+&__nav{
+    font-family: Fraunces 9pt Soft;
+font-size: 15px;
+font-weight: 900;
+line-height: 25px;
+letter-spacing: 1px;
+text-align: left;}
+&__ligne{
+    opacity: 0.25;
+    background: #FAD400;
+    width: 137px;
+    height: 10px;
+    border-radius: 28px;
+    margin:-10px;
+}
+}
+.imgbox{
+    height: 600px;
+    display: flex;
+}
+.card2{
+    width: 445px;
+    height: 285px;
+    padding-right: 165px;
+    
+    &__title{
+        color: #24303E;
+    font-family: Fraunces 9pt Soft;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.286px;
+    }
+    &__content{
+        color: #808397;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: -0.129px;
+    }
+    &__nav{
+        font-family: Fraunces 9pt Soft;
+font-size: 15px;
+font-weight: 900;
+line-height: 25px;
+letter-spacing: 1px;
+text-align: left;
+
+
+    }
+    &__ligne2{
+        opacity: 0.25;
+background: #FE7766;
+width: 137px;
+height: 10px;
+border-radius: 28px;
+margin:-10px;
+    }
+    }
+    // LES DEUX IMG 
+    .imgflex1{
+        background-image: url("image-graphic-design.jpg");
+        height: 600px;
+        width: 50%;
+       
+        &__global{
+        display: flex;
+        width: 339px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 360px 190px 59px 190px;
+        }
+        &__title{
+            
+        color: #24554A;
+        text-align: center;
+        font-family: Fraunces 9pt Soft;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        }
+        &__content{
+           
+            color: #3E7467;
+            text-align: center;
+            font-family: Barlow;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27px; /* 168.75% */
+            letter-spacing: -0.114px;
+        }
+    }
+    .imgflex2{
+        background-image: url("image-photography.jpg");
+        height: 600px;
+        width: 50%;
+       
+        &__global{
+        display: flex;
+        width: 339px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 360px 190px 59px 190px;
+        }
+        &__title{
+            
+            color: #24554A;
+            text-align: center;
+            font-family: Fraunces 9pt Soft;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: -0.2px;
+        }
+        &__content{
+           
+            color: #3E7467;
+            text-align: center;
+            font-family: Barlow;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27px; /* 168.75% */
+            letter-spacing: -0.114px;
+        }
+    }
+//FIN DEUX IMG
+// DEBUT TEMOIGNAGES
+.temoignage{
+    width: 1110px;
+    height: 457px;
+    padding: 90px 165px 90px 165px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titletem{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 81px;
+
+}
+.boxtem{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    &__img{
+        width: 72px;
+        height:72px;
+        border-radius: 72px;
+    }
+    &__perso{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+
+    }
+    &__content{
+        text-align: center;
+        padding: 58px 0px 69px 0px;
+        color: #5B636D;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 177.778% */
+        letter-spacing: -0.129px;
+    }
+    &__name{
+        color: #24303E;
+text-align: center;
+font-family: Fraunces 9pt Soft;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.129px;
+    }
+    &__poste{
+        color: #A7AAAD;
+text-align: center;
+font-family: Barlow;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 178.571% */
+letter-spacing: -0.1px;
+    }
+}
+// FIN TEMOIGNAGE
+//DEBUT DIAPO IMG
+
+.diapo{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+    &__img{
+        width:25%;
+    }
+}
+//FIN DIAPO
+//DEBUT FOOTER
+footer{
+    width: 1440px;
+    height: 350px;
+    background: #90D4C6;
+}
+.boxfooter{
+    width: 300px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 570px;
+}
+.pagefooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 88px;
+    color: #458D7E;
+font-family: Barlow;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 138.889% */
+letter-spacing: -0.129px;
+    &__nav2{
+        margin: 0px 57px 0px 57px;
+    }
+}
+.logogreen{
+    margin-bottom: 40px;
+}
+.social{
+    width: 164px;
+    height: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
