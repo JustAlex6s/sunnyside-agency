@@ -1,3 +1,11 @@
+$small-screen: "340px";
+$lg-screen: "700px";
+
+@mixin media-width($screensize,$screensize2){
+   @media (min-width:$screensize) and (max-width:$screensize2) {
+      @content;
+    }
+}
 body{
 margin:0px;
 background: #F1F1F1;
@@ -5,22 +13,37 @@ background: #F1F1F1;
 }
 // HEADER
 .imgfond{
-    background-image: url("image-header.jpg");
+background-image: url("image-header.jpg");
 background-size:cover;
 background-repeat: no-repeat;
 height:800px;
+@include media-width($small-screen,$lg-screen){
+    height: 538px;
+    background-position: center;
+  }
 }
 header{
     height: 800px;
+    @include media-width($small-screen,$lg-screen){
+        height: 538px;
+      }
 }
 .navbar{
     display:flex;
     height: 56px;
     padding: 34px 48px 0px 40px;
+    @include media-width($small-screen,$lg-screen){
+        width: auto;
+        height: 24px;
+      }
 }
 .logo{
     width: 170px;
 height: 33px;
+@include media-width($small-screen,$lg-screen){
+    width: 123.636px;
+height: 24px;
+  }
 }
 .navlogo{
     display:flex;
@@ -78,6 +101,9 @@ letter-spacing: -0.129px;
     letter-spacing: 8.75px;
     text-transform: uppercase;
     padding-top: 105px;
+    @include media-width($small-screen,$lg-screen){
+        font-size:24px;
+      }
 
   }
 .arrow{
@@ -97,6 +123,35 @@ letter-spacing: -0.129px;
     align-items: center;
     flex-wrap: nowrap;
     height:600px;
+   
+    @include media-width($small-screen,$lg-screen){
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height:auto;
+      }
+}
+.flexbox2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height:600px;
+   
+    @include media-width($small-screen,$lg-screen){
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height:auto;
+      }
 }
 .card{
 width: 445px;
@@ -111,6 +166,10 @@ font-style: normal;
 font-weight: 900;
 line-height: normal;
 letter-spacing: -0.286px;
+@include media-width($small-screen,$lg-screen){
+    text-align: center;
+    font-size: 38px;
+  }
 }
 &__content{
     color: #808397;
@@ -120,6 +179,10 @@ font-style: normal;
 font-weight: 600;
 line-height: 30px; /* 166.667% */
 letter-spacing: -0.129px;
+@include media-width($small-screen,$lg-screen){
+    text-align: center;
+    font-size: 22px;
+  }
 }
 &__nav{
     font-family: Fraunces 9pt Soft;
@@ -127,7 +190,12 @@ font-size: 15px;
 font-weight: 900;
 line-height: 25px;
 letter-spacing: 1px;
-text-align: left;}
+text-align: left;
+@include media-width($small-screen,$lg-screen){
+    text-align: center;
+    
+  }
+}
 &__ligne{
     opacity: 0.25;
     background: #FAD400;
@@ -136,10 +204,25 @@ text-align: left;}
     border-radius: 28px;
     margin:-10px;
 }
+@include media-width($small-screen,$lg-screen){
+    width: 327px;
+    height: 400px;
+    padding-left: 0px;
+  }
 }
 .imgbox{
     height: 600px;
     display: flex;
+    @include media-width($small-screen,$lg-screen){
+        width: 375px;
+        height: 312px;
+        
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+      }
+    
 }
 .card2{
     width: 445px;
@@ -154,6 +237,10 @@ text-align: left;}
     font-weight: 900;
     line-height: normal;
     letter-spacing: -0.286px;
+    @include media-width($small-screen,$lg-screen){
+        text-align: center;
+        font-size: 38px;
+      }
     }
     &__content{
         color: #808397;
@@ -163,6 +250,10 @@ text-align: left;}
     font-weight: 600;
     line-height: 30px; /* 166.667% */
     letter-spacing: -0.129px;
+    @include media-width($small-screen,$lg-screen){
+        text-align: center;
+        font-size: 22px;
+      }
     }
     &__nav{
         font-family: Fraunces 9pt Soft;
@@ -171,7 +262,10 @@ font-weight: 900;
 line-height: 25px;
 letter-spacing: 1px;
 text-align: left;
-
+@include media-width($small-screen,$lg-screen){
+    text-align: center;
+    
+  }
 
     }
     &__ligne2{
@@ -181,9 +275,40 @@ width: 137px;
 height: 10px;
 border-radius: 28px;
 margin:-10px;
+@include media-width($small-screen,$lg-screen){
+    width: 137px;
+    height: 10px;
+    border-radius: 28px;
+    margin: -10px 0px 0px 0px;
+  }
     }
+    @include media-width($small-screen,$lg-screen){
+    padding-right: 0px;
+    width: 327px;
+    height: 400px;
+    text-align: center;
     }
+}
     // LES DEUX IMG 
+    .flexbox3{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        height:600px;
+       
+        @include media-width($small-screen,$lg-screen){
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            height:auto;
+          }
+    }
     .imgflex1{
         background-image: url("image-graphic-design.jpg");
         height: 600px;
@@ -196,6 +321,10 @@ margin:-10px;
         justify-content: center;
         align-items: center;
         padding: 360px 190px 59px 190px;
+        @include media-width($small-screen,$lg-screen){
+            padding: 360px 24px 59px 24px;
+            width:auto;
+          }
         }
         &__title{
             
@@ -219,6 +348,10 @@ margin:-10px;
             line-height: 27px; /* 168.75% */
             letter-spacing: -0.114px;
         }
+        @include media-width($small-screen,$lg-screen){
+            width:100%;
+            background-position: center;
+          }
     }
     .imgflex2{
         background-image: url("image-photography.jpg");
@@ -232,6 +365,10 @@ margin:-10px;
         justify-content: center;
         align-items: center;
         padding: 360px 190px 59px 190px;
+        @include media-width($small-screen,$lg-screen){
+            padding: 360px 24px 59px 24px;
+            width:auto;
+          }
         }
         &__title{
             
@@ -255,6 +392,10 @@ margin:-10px;
             line-height: 27px; /* 168.75% */
             letter-spacing: -0.114px;
         }
+        @include media-width($small-screen,$lg-screen){
+            width:100%;
+            background-position: center;
+          }
     }
 //FIN DEUX IMG
 // DEBUT TEMOIGNAGES
@@ -268,6 +409,11 @@ margin:-10px;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    @include media-width($small-screen,$lg-screen){
+        width: 327px;
+        height:auto;
+        padding: 70px 24px 70px 24px;
+      }
 }
 .titletem{
     display: flex;
@@ -299,6 +445,10 @@ margin:-10px;
     justify-content: center;
     align-items: center;
     margin: 0px 30px 0px 0px;
+    @include media-width($small-screen,$lg-screen){
+        margin: 0px 0px 64px 0px;
+        
+      }
 
     }
     &__content{
@@ -333,6 +483,9 @@ font-weight: 600;
 line-height: 25px; /* 178.571% */
 letter-spacing: -0.1px;
     }
+    @include media-width($small-screen,$lg-screen){
+        flex-direction: column;
+      }
 }
 // FIN TEMOIGNAGE
 //DEBUT DIAPO IMG
@@ -345,8 +498,19 @@ letter-spacing: -0.1px;
         justify-content: center;
         align-items: stretch;
         align-content: stretch;
+        @include media-width($small-screen,$lg-screen){
+            display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+          }
     &__img{
         width:25%;
+        @include media-width($small-screen,$lg-screen){
+            width:50%;
+          }
     }
 }
 //FIN DIAPO
@@ -355,6 +519,9 @@ footer{
     width: 1440px;
     height: 350px;
     background: #90D4C6;
+    @include media-width($small-screen,$lg-screen){
+        width:auto;
+      }
 }
 .boxfooter{
     width: 300px;
@@ -366,6 +533,10 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 72px 570px;
+    @include media-width($small-screen,$lg-screen){
+        width:auto;
+        padding: 64px 39px 80px 39px;
+      }
 }
 .pagefooter{
     display: flex;
