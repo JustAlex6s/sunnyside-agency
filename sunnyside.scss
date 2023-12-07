@@ -1,16 +1,14 @@
 $small-screen: "340px";
 $lg-screen: "700px";
 
-@mixin media-width($screensize,$screensize2){
-   @media (min-width:$screensize) and (max-width:$screensize2) {
-      @content;
-    }
-}
+
+@import 'mixin';
 body{
 margin:0px;
 background: #F1F1F1;
 
 }
+
 // HEADER
 .imgfond{
 background-image: url("image-header.jpg");

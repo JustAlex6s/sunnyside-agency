@@ -1,0 +1,5 @@
+@mixin media-width($screensize,$screensize2){
+    @media (min-width:$screensize) and (max-width:$screensize2) {
+       @content;
+     }
+ }
